@@ -1,0 +1,2 @@
+C:\school_projecten\keuzedeel vrar\keuzedeel VR\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\school_projecten\keuzedeel vrar\keuzedeel VR\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
