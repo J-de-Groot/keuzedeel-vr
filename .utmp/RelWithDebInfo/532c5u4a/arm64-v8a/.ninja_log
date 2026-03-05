@@ -1,10 +1,19 @@
 # ninja log v5
 229	5106	7926099322219856	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	51b88d75ab570f6
 129	5166	7926099322386197	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	dbac9aac0d131989
-97	5174	7926099322874618	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	b4fd62a175d5bf99
-289	5208	7926099323469192	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	dcb068e6fd056c32
-1	5303	7926099324591823	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	fd38fd796d7a9022
 1067	5666	7926099328300636	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	283a08a75500a159
+5961	6388	7926099335563467	C:/school_projecten/keuzedeel vrar/keuzedeel VR/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/532c5u4a/obj/arm64-v8a/libgame.so	c0090ab27d00264f
+97	5174	7926099322874618	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	b4fd62a175d5bf99
+1	5303	7926099324591823	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	fd38fd796d7a9022
+289	5208	7926099323469192	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	dcb068e6fd056c32
 170	5770	7926099329358575	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	c23d435d0cc733ee
 62	5960	7926099331294992	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	8f39830a1e028568
-5961	6388	7926099335563467	C:/school_projecten/keuzedeel vrar/keuzedeel VR/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/532c5u4a/obj/arm64-v8a/libgame.so	c0090ab27d00264f
+125	3708	7944230441212337	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	51b88d75ab570f6
+53	3712	7944230441212337	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	dbac9aac0d131989
+38	3717	7944230441313427	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	b4fd62a175d5bf99
+91	3753	7944230441581961	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	dcb068e6fd056c32
+70	3777	7944230441662421	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	fd38fd796d7a9022
+164	4099	7944230445234962	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	283a08a75500a159
+145	4150	7944230445763493	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	c23d435d0cc733ee
+19	4290	7944230447162656	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	8f39830a1e028568
+4291	4637	7944230450666896	C:/school_projecten/keuzedeel vrar/keuzedeel VR/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/532c5u4a/obj/arm64-v8a/libgame.so	c0090ab27d00264f
