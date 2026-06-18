@@ -34,11 +34,12 @@ public class Countdown : MonoBehaviour
 
     private void Start()
     {
+        timer = countdownTime;
         if (!runOnStart)
             return;
 
         isRunning = true;
-        timer = countdownTime;
+
     }
 
     private void Update()

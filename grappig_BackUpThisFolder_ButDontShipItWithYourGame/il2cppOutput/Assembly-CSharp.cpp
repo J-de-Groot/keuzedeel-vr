@@ -6590,25 +6590,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Countdown_Start_mFC01CF26D7C1B8CF52DA71A
 {
 	{
 		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:37>
-		bool L_0 = __this->___runOnStart;
-		if (L_0)
+		float L_0 = __this->___countdownTime;
+		__this->___timer = L_0;
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:38>
+		bool L_1 = __this->___runOnStart;
+		if (L_1)
 		{
-			goto IL_0009;
+			goto IL_0015;
 		}
 	}
 	{
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:38>
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:39>
 		return;
 	}
 
-IL_0009:
+IL_0015:
 	{
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:40>
-		__this->___isRunning = (bool)1;
 		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:41>
-		float L_1 = __this->___countdownTime;
-		__this->___timer = L_1;
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:42>
+		__this->___isRunning = (bool)1;
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:43>
 		return;
 	}
 }
@@ -6628,7 +6628,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Countdown_Update_mE1EFFC8728512B469BB4F3
 	String_t* G_B6_0 = NULL;
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* G_B6_1 = NULL;
 	{
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:46>
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:47>
 		bool L_0 = __this->___isRunning;
 		if (L_0)
 		{
@@ -6636,18 +6636,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Countdown_Update_mE1EFFC8728512B469BB4F3
 		}
 	}
 	{
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:47>
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:48>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:49>
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:50>
 		float L_1 = __this->___timer;
 		float L_2;
 		L_2 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		__this->___timer = ((float)il2cpp_codegen_subtract(L_1, L_2));
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:50>
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:51>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_3 = __this->___text;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -6658,7 +6658,7 @@ IL_0009:
 		}
 	}
 	{
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:51>
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:52>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_5 = __this->___text;
 		bool L_6 = __this->___wholeNumbersOnly;
 		if (L_6)
@@ -6694,7 +6694,7 @@ IL_0059:
 
 IL_005e:
 	{
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:53>
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:54>
 		float L_11 = __this->___timer;
 		if ((!(((float)L_11) <= ((float)(0.0f)))))
 		{
@@ -6702,11 +6702,11 @@ IL_005e:
 		}
 	}
 	{
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:55>
-		__this->___timer = (0.0f);
 		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:56>
-		__this->___isRunning = (bool)0;
+		__this->___timer = (0.0f);
 		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:57>
+		__this->___isRunning = (bool)0;
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:58>
 		bool L_12 = __this->___reloadSceneOnEnd;
 		if (!L_12)
 		{
@@ -6714,13 +6714,13 @@ IL_005e:
 		}
 	}
 	{
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:58>
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:59>
 		Countdown_OnTimerEnded_mCCCDBAF864A6B8A76051006B7509238F29426AB3(__this, NULL);
 	}
 
 IL_008b:
 	{
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:60>
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:61>
 		return;
 	}
 }
@@ -6728,9 +6728,9 @@ IL_008b:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Countdown_StartTimer_mAE8C950843F13121C7C16B79408677F9AC439C32 (Countdown_t5ED13CAA4900EDB87B032B0C83826D6E4C192129* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:64>
-		__this->___isRunning = (bool)1;
 		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:65>
+		__this->___isRunning = (bool)1;
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:66>
 		return;
 	}
 }
@@ -6738,9 +6738,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Countdown_StartTimer_mAE8C950843F13121C7
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Countdown_PauseTimer_m78C9F10449DA4DB0083093EAD37DADFCFD1E895C (Countdown_t5ED13CAA4900EDB87B032B0C83826D6E4C192129* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:70>
-		__this->___isRunning = (bool)0;
 		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:71>
+		__this->___isRunning = (bool)0;
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:72>
 		return;
 	}
 }
@@ -6748,10 +6748,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Countdown_PauseTimer_m78C9F10449DA4DB008
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Countdown_ResetTimer_m84BD117680E20447177EFCF94343471AA1B6BAB4 (Countdown_t5ED13CAA4900EDB87B032B0C83826D6E4C192129* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:75>
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:76>
 		float L_0 = __this->___countdownTime;
 		__this->___timer = L_0;
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:76>
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:77>
 		return;
 	}
 }
@@ -6759,12 +6759,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Countdown_ResetTimer_m84BD117680E2044717
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Countdown_OnTimerEnded_mCCCDBAF864A6B8A76051006B7509238F29426AB3 (Countdown_t5ED13CAA4900EDB87B032B0C83826D6E4C192129* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:80>
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:81>
 		RuntimeObject* L_0;
 		L_0 = Countdown_WaitAndLoadScene_mB3BDB2CF7CA3D50BA520BE50D3B231A1B80D6B8F(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_1;
 		L_1 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_0, NULL);
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:81>
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:82>
 		return;
 	}
 }
@@ -6867,7 +6867,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CWaitAndLoadSceneU3Ed__14_MoveNext_m22
 IL_0017:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:85>
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:86>
 		Countdown_t5ED13CAA4900EDB87B032B0C83826D6E4C192129* L_4 = V_1;
 		NullCheck(L_4);
 		float L_5 = L_4->___waitTimeBeforeReload;
@@ -6882,16 +6882,16 @@ IL_0017:
 IL_0038:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:86>
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:87>
 		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
 		Scene_tA1DC762B79745EB5140F054C884855B922318356 L_7;
 		L_7 = SceneManager_GetActiveScene_m0B320EC4302F51A71495D1CCD1A0FF9C2ED1FDC8(NULL);
 		V_2 = L_7;
 		int32_t L_8;
 		L_8 = Scene_get_buildIndex_m82B6E0C96C85C952B7A2D794DB73CDA99AA9A57E((&V_2), NULL);
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:87>
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:88>
 		SceneManager_LoadScene_m0957E62F2A0A0243C79394E5B74E8EFA86BE5ED1(L_8, NULL);
-		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:89>
+		//<source_info:C:/school_projecten/keuzedeel vrar/keuzedeel VR/Assets/timer_and_countdown/Countdown.cs:90>
 		return (bool)0;
 	}
 }
